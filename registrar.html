@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="css/icon.css" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <title>Flex box</title>
+  </head>
+  <body>
+    <div class="yotlanga-interface">
+    <header>
+      <nav>
+        <div class="nav-wrapper red darken-3 ">
+          <a href="#" class="brand-logo">Yotlanga</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">entrar</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>     <!-- fim cabecalho -->
+
+    <!-- inicio contentor  -->
+    <div class="row">
+      <div class="col s12 m7 l5  xl5 offset-m3 offset-l6 offset-xl6">
+        <div class="row">
+          <form class="col s12 m12" action="index.html" method="post">
+            <div class="row">
+              <!-- nome -->
+              <div class="input-field col s12 m6">
+                <input type="text" id="nome" name="nome" class="validate">
+                <label for="nome">Nome</label>
+              </div>
+              <!-- apelido -->
+              <div class="input-field col s12 m6">
+                <input type="text" id="apelido" name="apelido" class="validate">
+                <label for="apelido">Apelido</label>
+              </div>
+            </div>
+
+            </div>
+
+            <!-- email -->
+            <div class="row">
+              <div class="input-field col s12 m12">
+                <input type="email" id="email" name="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+
+            </div>
+
+            <!-- password -->
+            <div class="row">
+              <div class="input-field col s12 m12">
+                <input type="password" id="senha" name="senha" class="validate">
+                <label for="apelido">Senha</label>
+              </div>
+
+            </div>
+
+
+            <!-- data de nascimento -->
+            <div class="row">
+              <label class="col s12 m12">Data de Nascimento</label>
+              <!-- dia -->
+              <div class="col s12 m4">
+                <select class="browser-default">
+                  <option value="" disabled selected>Dia</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <!-- mes -->
+              <div class="col s12 m4">
+                <select class="browser-default">
+                  <option value="" disabled selected>Mes</option>
+                  <option>Janeiro</option>
+                  <option>Fevereiro</option>
+                  <option>Marco</option>
+                  <option>Abril</option>
+                  <option>Maio</option>
+                  <option>Junho</option>
+                  <option>Julho</option>
+                  <option>Agosto</option>
+                  <option>Setembro</option>
+                  <option>Outubro</option>
+                 <option>Novembro</option>
+                 <option>Dezembro</option>
+               </select>
+              </div>
+              <!-- ano -->
+              <div class="col s12 m4">
+                <select class="browser-default">
+                  <option value="" disabled selected>Ano</option>
+                  <option value="1">2000</option>
+                  <option value="2">1999</option>
+                  <option value="3">1998</option>
+                </select>
+              </div>
+
+              </div>
+
+              <!-- sexo -->
+              <div class="row">
+                <span class="col s12 m6">
+                  <input  class="with-gap" type="radio" name="sexo" id="masculino" checked  >
+                  <label for="masculino">Masculino</label>
+                </span>
+                <span class="col s12 m6">
+                  <input class="with-gap"  type="radio" name="sexo" id="feminino">
+                  <label for="feminino">Feminino</label>
+                </span>
+
+              </div>
+
+              <!-- termos e condicoes -->
+              <div class="row">
+              <p class="col s12 m12">
+                <input type="checkbox" id="aceito">
+                <label for="aceito">
+                  <span class="yo-paragrafo-termo">Ao clicar em Criar conta,
+                    você concorda com nossos <a href="#">Termos</a> e que leu
+                    nossa <a href="#">Política de Dados </a>, incluindo nosso
+                     Uso de <a href="#">Cookies</a>. Você pode receber
+                      notificações por SMS da yotlanga e pode cancelar
+                      o recebimento  quando quiser.</span>
+                </label>
+              </p>
+            </div>
+
+            <div class="yo-btn-criarConta ">
+            <button class="btn waves-effect waves-light" type="submit"
+            name="criar_conta"> Criar Conta
+            <i class="material-icons right"></i>
+            </button>
+          </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/forms.js"></script>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="css/icon.css" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/estilo.css"  media="screen,projection"/>
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>Audio perfil</title>
+   </head>
+   <body>
+     <div id="yo-perfil-audio-interface" class="yotlanga-interface">
+     <header>
+       <nav>
+         <div class="nav-wrapper red darken-3 ">
+           <a href="#" class="brand-logo">Yotlanga</a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li><a href="#">entrar</a></li>
+           </ul>
+         </div>
+       </nav>       <!-- fim nav -->
+     </header>     <!-- fim cabecalho -->
+
+        <div class="yo-container">
+
+        <div class="yo-perfil-audio-painel">
+          <div class="row">
+            <div class="yo-audio-info col m8 l8 xl8">
+              <div class="yo-btn-playpause col s1 m1">
+                <a class="btn-floating btn-large waves-effects waves-light red">
+                  <i class="material-icons">play_arrow</i></a>
+              </div>
+              <ul class="col s5 m5">
+                <li class="yo-label"><div class="yo-label-audio-artista"><span class="yo-label-background">Artista</span></div></li>
+                <li class="yo-label"><div class="yo-label-audio-titulo"><span class="yo-label-background">Titulo</span></div></li>
+              </ul>
+              <ul class="col s6 m6">
+                <li class="yo-label col s12"><div class="right yo-label-audio-data"><span class="yo-label-background">Data</span></div></li>
+                <li class="yo-label col s12"><div class="right yo-label-audio-genero"><span class="yo-label-background">#genero</span></div></li>
+              </ul>
+            </div>
+
+            <div class="col s4 m4  l4 xl4">
+              <div class="yo-audio-artwork">
+                <img src="images/view640.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <section class="yo-perfil-audio-other">
+          <div class="row">
+            <div class="col s8 m8">
+
+              <!-- formulario parao comentario -->
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">comment_mode</i>
+                    <textarea name="yo-perfil-audio-post" id="yo-perfil-audio-post" class="materialize-textarea"></textarea>
+                    <label for="yo-perfil-audio-post">Comentario</label>
+                  </div>
+                </div>
+              </form>    <!-- fim comentario -->
+
+              <!-- controlos para opcoes  (partilhar, like(yo), etc)-->
+              <div class="yo-btn-group yo-btn-control">
+                <ul class="yo-btn-control-action row yo-inline col s6">
+                  <li class=""><a class="waves-effects waves-light yo-btn yo-btn-default "><i class="material-icons">thumb_up</i> Yo<i class="material-icons">exposure_plus_1</i></a></li  >
+                  <li class=""><a class="waves-effects waves-light yo-btn yo-btn-default"><i class="material-icons">autorenew</i> republicar</a></li>
+                  <li class=""><a class="waves-effects waves-light yo-btn yo-btn-default"><i class="material-icons">share</i> partilhar</a></li>
+                  <li class="  "><a class="waves-effects waves-light yo-btn yo-btn-default"><i class="material-icons">apps</i> mais</a></li>
+                </ul>
+
+                <!-- metadata de actividades do audio (likes , listens, shares)-->
+                <ul class="yo-btn-control-info row yo-inline col s6 ">
+                  <li class="yo-btn right"><i class="material-icons">share</i> 5</li>
+                  <li class="yo-btn right"><i class="material-icons">autorenew</i> 3.4k</li>
+                  <li class="yo-btn right"><i class="material-icons">thumb_up</i> 5M</a></li  >
+                  <li class="yo-btn right"><i class="material-icons">headset</i> 101M</a></li  >
+                </ul>
+
+              </div>
+              <!-- divisor -->
+              <div class="col s12 divider"></div>
+              <!-- <div class="col s12 divider"></div> -->
+
+              <div class="row">
+                <!-- proprietario do audio perfil info -->
+                <div class="col s4 m4 l4 xl4">
+                  <div class="yotlanga-perfil-img">
+                    <img class="yo-img-audio-perfil img-circle" src="images/photo.png"/>
+                      <p class="yotlanga-perfil-username ">liry cash</p>
+                      <a class="btn">Seguir</a>
+                  </div>
+
+                  </div>
+
+                <!-- audio informacao (licenca) e comentarios  -->
+                <div class="col s8 m8 l8 xl8">
+
+                  <p><strong>Lancado por:</strong><br>
+                    <span class="yotlanga-perfil-audio-lancado">yotlanga records</span>
+                  </p>
+                  <p><strong>Data lancamento:</strong><br>
+                    <span class="yotlanga-perfil-audio-lancado-data">02 de Maio de 2017</span>
+                  </p>
+                  <p><strong>Licenca:</strong><br>
+                    <span class="yotlanga-perfil-audio-lancado">&copysr; 2017 2017 yotlanga record limitada</span>
+                  </p>
+
+
+                </div>
+
+              </div>
+              <div class="col s8 push-s4">
+
+
+                <!-- info comentarios -->
+              <div class="yotlanga-perfil-this-song-list-comments">
+                  <div class="yotlanga-perfil-this-song-num-comments">
+                      <span class="glyphicon glyphicon-comment"></span> 1.121 comentarios
+                      <p class="yotlanga-perfil-this-song-comments-hide">Esconder &blacktriangledown; </p>
+                      <div class="divider"></div>
+                    </div>
+                  </div>
+                  <!-- lista comentarios -->
+                  <!-- <ul class="yo-lista-comentario"> -->
+                    <ul class="yo-media-list">
+                    <li class="col s12 yo-media">
+                      <div class="yo-comentario">
+                        <img class="col s2 yo-usuario-comentario-img-perfil img-circle yo-media-object" src="images/photo.png"/>
+                        <div class="col s8">
+                        <p class="yo-media-heading"> <a href="">username</a> em <span class="yo-comentario-data">14:12</p>
+                        <div class="yo-media-body yo-comentario-texto">Comentario</div>
+                      </div>
+                      <span class="col s2 yo-comentario-tempo">Agora</span>
+                      </div>
+                    </li>
+                    <li class="col s12 yo-media">
+                      <div class="yo-comentario">
+                        <img class="col s2 yo-usuario-comentario-img-perfil img-circle yo-media-object" src="images/photo.png"/>
+                        <div class="col s8">
+                        <p class="yo-media-heading"> <a href="">username</a> em <span class="yo-comentario-data">14:12</p>
+                        <div class="yo-media-body yo-comentario-texto">Comentario</div>
+                      </div>
+                      <span class="col s2 yo-comentario-tempo">Agora</span>
+                      </div>
+                      <ul class="yo-media-list">
+                        <li class="col s12 yo-media">
+                          <div class="yo-comentario">
+                            <img class="col s2 yo-usuario-comentario-img-perfil img-circle yo-media-object" src="images/photo.png"/>
+                            <div class="col s8">
+                            <p class="yo-media-heading"> <a href="">username</a> em <span class="yo-comentario-data">14:12</p>
+                            <div class="yo-media-body yo-comentario-texto">Comentario</div>
+                          </div>
+                          <span class="col s2 yo-comentario-tempo">Agora</span>
+                          </div>
+                        </li>
+
+                      </ul>
+
+                    </li>
+
+                    <li class="col s12 yo-media">
+                      <div class="yo-comentario">
+                        <img class="col s2 yo-usuario-comentario-img-perfil img-circle yo-media-object" src="images/photo.png"/>
+                        <div class="col s8">
+                        <p class="yo-media-heading"> <a href="">username</a> em <span class="yo-comentario-data">14:12</p>
+                        <div class="yo-media-body yo-comentario-texto">Comentario</div>
+                      </div>
+                      <span class="col s2 yo-comentario-tempo">Agora</span>
+                      </div>
+
+                    </li>
+
+
+
+                      <!-- <li class="col s12">
+                        <div class="yo-comentario">
+                          <img class="col s2 yo-usuario-comentario-img-perfil img-circle" src="images/photo.png"/>
+                          <div class="col s8">
+                          <p> <a href="">username</a> em <span class="yo-comentario-data">14:12</p>
+                          <div class="yo-comentario-texto">Comentario</div>
+                        </div>
+                        <span class="col s2 yo-comentario-tempo">Agora</span>
+                        </div>
+
+                        <ul class="yo-lista-comentario-in-comentario">
+                          <li class="col s12">
+                            <div class="yo-comentario">
+                              <img class="col s2 yo-usuario-comentario-img-perfil img-circle" src="images/photo.png"/>
+                              <div class="col s8">
+                              <p> <a href="">username</a> em <span class="yo-comentario-data">14:12</p>
+                              <div class="yo-comentario-texto">Comentario</div>
+                            </div>
+                            <span class="col s2 yo-comentario-tempo">Agora</span>
+                            </div>
+                          </li>
+                            <li class="col s12">
+                              <div class="yo-comentario">
+                                <img class="col s2 yo-usuario-comentario-img-perfil img-circle" src="images/photo.png"/>
+                                <div class="col s8">
+                                <p> <a href="">username</a> em <span class="yo-comentario-data">14:12</p>
+                                <div class="yo-comentario-texto">Comentario</div>
+                              </div>
+                              <span class="col s2 yo-comentario-tempo">Agora</span>
+                              </div>
+                            </li>
+
+                        </ul>
+                      </li>
+                        <li class="col s12">
+                          <div class="yo-comentario">
+                            <img class="col s2 yo-usuario-comentario-img-perfil img-circle" src="images/photo.png"/>
+                            <div class="col s8">
+                            <p> <a href="">username</a> em <span class="yo-comentario-data">14:12</p>
+                            <div class="yo-comentario-texto">Comentario</div>
+                          </div>
+                          <span class="col s2 yo-comentario-tempo">Agora</span>
+                          </div>
+                        </li> -->
+
+
+
+                  </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="col s4 m4">
+              <ul class="collapsible" data-collapsible="expadable">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">playlist_add_check</i>Relacionado
+                  </div>
+                  <div class="collapsible-body"><span>hits relacionados</span></div>
+                </li>
+
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">playlist_play</i>Na Lista
+                  </div>
+                  <div class="collapsible-body"><span>outros items</span></div>
+                </li>
+
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">thumb_up</i>5M Yo's
+                  </div>
+                  <div class="collapsible-body"><span>Usuarios com yo's</span></div>
+                </li>
+
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">autorenew</i> 3.4k Republicacoes
+                  </div>
+                  <div class="collapsible-body"><span>Usuarios que republicaram</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">devices</i> Encontre-nos
+                  </div>
+                  <div class="yo-btn-store">
+                    <div class="row">
+                      <img src="images/appstore.svg" class="col s6" alt="">
+                      <img src="images/playstore.png" class="col s6" alt="">
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+
+
+
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+   </div>    <!-- fim yotlanga-interface -->
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+     <script type="text/javascript">
+       $(document).ready(function(){
+
+       });
+
+
+     </script>
+   </body>
+ </html>

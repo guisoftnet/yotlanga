@@ -1,0 +1,244 @@
+################################ GLOBAL #####################################
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background: #f5f5f5 none repeat scroll 0% 0%;
+    /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+
+}
+
+  POSICIONAR BEM OS ELEMENTOS DEVIDO A BARRA LATERAL
+/*painel audio perfil*/
+.yo-perfil-audio-painel{
+  height: 300px;
+  background-color: #5d5d5d;
+  /*margin-top: -25px;*/
+}
+
+.yo-container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*audio perfil imagem artwork*/
+.yo-audio-artwork {
+  background-color: white;
+  height: 250px;
+  margin: 15px;
+}
+
+
+@media(min-width: 902px) {
+  /*painel de usuario */
+  #yo-procurar-interface{
+    padding-left: 300px;
+  }
+
+  .button-collapse {
+    display: none;
+  }
+  .yo-perfil-audio-painel{
+    height: 300px;
+    background-color: #5d5d5d;
+    /*margin-top: -25px;*/
+  }
+  /*perfil audio*/
+
+  /*.yo-audio-info {
+
+    padding-top: 15px;
+  }*/
+
+}
+
+
+/*tags */
+
+.yo-tags {
+  margin: 10px 0 18px 10px;
+}
+
+/*perfil audio*/
+
+.yo-audio-info {
+
+  margin-top: 15px;
+}
+
+
+.yo-label {
+  color: white;
+  margin-bottom:  10px;
+}
+
+.yo-label-background {
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.yo-label-audio-genero .yo-label-background {
+  background-color: #BFBABA;
+}
+
+/*imagem artwork*/
+.yo-audio-artwork img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.yo-btn-group .btn {
+  padding: 0px 0.8rem;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.yo-inline i {
+  font-size: 14px;
+}
+.yo-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+}
+
+.yo-btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.yo-btn-default:focus,
+.yo-btn-default.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.yo-btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+
+
+.yo-inline  li{
+  display: inline-block;
+}
+
+
+.yo-btn-control-info {
+  color: gray;
+}
+
+
+.divider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.yo-perfil-audio-other {
+  background-color: #fff;
+}
+
+.img-circle {
+  border-radius: 50%
+}
+
+.yo-comentario img {
+  width: 20px;
+  height: 25px;
+}
+
+.yo-lista-comentario-in-comentario .yo-comentario img {
+  width: 10px;
+  height: 25px;
+}
+
+
+/*copiado do bootstrap*/
+.yo-media-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.yo-media {
+  margin-top: 15px;
+}
+.yo-media:first-child {
+  margin-top: 0;
+}
+.yo-media,
+.yo-media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+.yo-media-body {
+  width: 10000px;
+}
+.yo-media-object {
+  display: block;
+}
+.yo-media-object.img-thumbnail {
+  max-width: none;
+}
+.yo-media-right,
+.yo-media > .pull-right {
+  padding-left: 10px;
+}
+.yo-media-left,
+.yo-media > .pull-left {
+  padding-right: 10px;
+}
+.yo-media-left,
+.yo-media-right,
+.yo-media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+.yo-media-middle {
+  vertical-align: middle;
+}
+.yo-media-bottom {
+  vertical-align: bottom;
+}
+.yo-media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+
+
+
+.yo-btn-store {
+  padding: 10px;
+}
