@@ -8,7 +8,7 @@
 }
 
 body {
-    max-width: 2000px;
+    /*max-width: 2000px;*/
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -100,7 +100,7 @@ body {
 
 
 .yo-btn-group .btn {
-  padding: 0px 0.8rem;
+  padding: 0px 0.10rem;
   font-size: 12px;
   text-transform: lowercase;
 }
@@ -110,7 +110,7 @@ body {
 }
 .yo-btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 6px 8px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
@@ -241,4 +241,48 @@ body {
 
 .yo-btn-store {
   padding: 10px;
+}
+
+
+  /*Esconder alguns elementos em caso de mobile*/
+.yo-esconder, .yo-hide-on-desktop {
+  display: none;
+}
+
+
+
+
+
+/*dispositivos pequenos */
+
+@media(max-width: 600px) {
+  .yo-perfil-audio-painel{
+    height: 300px;
+    background-color: #5d5d5d;
+    background: url("../images/view640.png") center ;
+    /*margin-top: -25px;*/
+  }
+
+  .yo-audio-artwork, .yo-hide-on-mobile {
+    display: none;
+  }
+
+
+
+
+  .yo-btn-group .yo-btn {
+    padding: 6px 0.6rem;
+    font-size: 0.9em;
+    text-transform: lowercase;
+  }
+
+  .yo-inline i {
+    font-size: 11px;
+  }
+
+  .yo-container {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
 }
