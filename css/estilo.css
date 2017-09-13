@@ -18,11 +18,11 @@ body {
 }
 
   POSICIONAR BEM OS ELEMENTOS DEVIDO A BARRA LATERAL
-/*painel audio perfil*/
+/*painel audio perfil
+  BUG: quando apagado a classe o container extende nas laterais
+*/
 .yo-perfil-audio-painel{
-  height: 300px;
-  background-color: #5d5d5d;
-  /*margin-top: -25px;*/
+
 }
 
 .yo-container {
@@ -99,7 +99,7 @@ body {
 }
 
 
-.yo-btn-group .btn {
+.yo-btn-group  {
   padding: 0px 0.10rem;
   font-size: 12px;
   text-transform: lowercase;
@@ -253,9 +253,9 @@ body {
 
 
 
-/*dispositivos pequenos */
+/*dispositivos pequenos  e medios*/
 
-@media(max-width: 600px) {
+@media(max-width: 991px) {
   .yo-perfil-audio-painel{
     height: 300px;
     background-color: #5d5d5d;
@@ -285,4 +285,38 @@ body {
     margin-right: 5px;
   }
 
+}
+
+/* dispositivos medios */
+@media(min-width: 601px) {
+  .yo-hide-on-mobile {
+   display: inherit;
+ }
+
+}
+
+
+
+.yo-prefixo {
+    position: absolute;
+    width: 3rem;
+    font-size: 2rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+
+.yo-btn-control-info .yo-btn {
+  padding: 0px 0.2rem;
+
+}
+
+
+.yo-btn-control-info {
+  margin: 0;
+  margin: 10px 2px;
+}
+
+.yo-btn-control-action {
+  margin: 5px;
 }
