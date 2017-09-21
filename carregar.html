@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="css/icon.css" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/estilo.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/classic.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/classic.date.css"  media="screen,projection"/>
+     <!-- <link type="text/css" rel="stylesheet" href="css/default.css"  media="screen,projection"/> -->
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Yotlanga - Carregue teus sons</title>
+   </head>
+
+   <body>
+     <!-- interface principal -->
+     <div class="yotlanga-interface">
+       <header>
+         <nav>
+           <div class="nav-wrapper red darken-3 ">
+             <img src="images/yotlanga.png"  class="brand-logo yo-brand-logo"/>
+             <ul id="nav-mobile" class="right hide-on-med-and-down">
+               <li><a href="#">registrar</a></li>
+             </ul>
+           </div>
+         </nav>       <!-- fim nav -->
+       </header>     <!-- fim cabecalho -->
+
+
+
+       <div class="yo-carregamento-box">
+
+         <!-- usuario registado  -->
+         <div class="row">
+  <div class="col s12">
+    <ul class="tabs">
+      <li class="tab col s1"><a class=""href="#test1">Upload</a></li>
+      <li class="tab col s2"><a  href="#yo-id-carregar-Minha-faixa">Minhas faixas</a></li>
+      <li class="tab col s2 "><a class="active"href="#test3">Estatistica</a></li>
+      <li class="tab col s2"><a href="#test4">Planos Pro</a></li>
+    </ul>
+  </div>
+  <!-- <div id="test1" class="col s12">Test 1</div> -->
+
+  <div id="test4" class="col s12">Test 4</div>
+</div>
+
+<!-- tab 1 -->
+<div id="test1">
+
+         <div class="col s12 m12">
+           <div class="row">
+             <div class="col s12 m12  center"><span class="yo-font-light yo-index-tendencia-texto" style="font-size: x-large">
+               <h1 class="yo-carregamento-box-titulo">
+               Carregue teu som para a yotlanga</h1>
+             </span>
+
+             <div class="divider"></div>
+           </div>
+
+           </div>
+         </div>
+         <!-- usuario registado  -->
+         <div class="yo-carregar-btn-signup col s12 center">
+           <form>
+           <span class="btn red darken-2">Escolher arquivo a carregar</span>
+           <span class="btn white black-text yo-opacity-transition yo-btn-transparente ">comecar uma gravacao
+             <i class="material-icons">keyboard_voice</i>
+           </span>
+           <div class="row">
+           <div class="col s12 push-m2">
+           <p class="">
+           <input type="checkbox" name="yo-playlist" id="yo-playlist" checked="checked">
+           <label for="yo-playlist">Criar playlist se forem varios arquivos</label>
+         </p>
+       </div>
+     </div>
+         </form>
+       </div>
+
+
+            <p><strong>Importante: </strong>Ao carregar, voce confirmar que as faixas respeitam os
+            nossos <a href="#"> Termos de Uso</a> e nao violam direitos de outras pessoas. Em caso
+          de duvida, visite as nossas paginas de <a href="#">Informacoes sobre direitos autorais</a> e as
+        de perguntas frequentes antes de enviar-nos.</p>
+        <p>Problemas ao enviar? Entre em <a href="#">Dicas de resolucao de problemas</a>.</p>
+        <p>Que tipos de arquivos da para enviar ? Oferecemos suporte a arquivos para audio AIFF, WAVE (WAV), FLAC,
+        ALAC, OGG, MP2, MP3, M4A,  AAC, AMR e WMA. Para Video MP4, FLV, MKV, 3GP.</p>
+        <div class="divider"></div>
+
+         <div class="yo-carregamento-rodape">
+           <ul>
+             <li><a href="#">aviso legal -</a></li>
+             <li><a href="#">cookies -</a></li>
+             <li><a href="#">yotlanga Ltd -</a></li>
+             <li><a href="#">Pesquisas populares</a></li>
+           </ul>
+           <p><a href="#">Idioma:</a>Portugues(portugal)</p>
+         </div>
+
+</div> <!-- fim tab 1 -->
+
+
+<!-- tab 2  -->
+<div id="yo-id-carregar-Minha-faixa" class="col s12">
+
+<div class="row">
+
+<form class="yo-carregamento-form-editar col s12" action="index.html" method="post">
+  <div class="col s1">
+       <input type="checkbox" id="yo-carregar-editar-check" />
+       <label for="yo-carregar-editar-check"></label>
+     </div>
+     <div class="col s4">
+       <select class="browser-default" >
+         <option value=""  selected>Editar faixa</option>
+         <option value="1">Option 1</option>
+         <option value="2">Option 2</option>
+         <option value="3">Option 3</option>
+       </select>
+     </div>
+  <div class="col s4">
+    <button class="btn red darken-2"type="button" name="button">Adicionar a playlist</button>
+  </div>
+
+</form>
+</div>
+<div class="divider"></div>
+
+<div class="yo-carregar-track-info-empty center">
+  <img src="ico/track.png" alt=""><br>
+  <span class="yo-font-light yo-font-14">Ops! Nenhuma faixa encontrada</span><br>
+  <a href="#">Carregue uma faixa e partilhe com todos</a>
+</div>
+
+</div>
+
+<!-- fim tab 2 -->
+
+<!-- tab 3 -->
+
+<div id="test3" class="col s12">
+<div class="row">
+  <div class="yo-carregar-estatistica-titulo col s6 ">
+  <span class="yo-font-light yo-index-tendencia-texto">Estatistica </span>
+  <p class="yo-font-light yo-font-14">Ops sem actividade em sua conta</p>
+</div>
+  <div class="yo-carregar-estatistica-timeline col s6 ">
+    <form class="  " action="index.html" method="post">
+
+      <div class="col s4">
+        De: <input type="text" class="datepicker" >
+      </div>
+      <div class="col s4">
+        Ate: <input type="text" class="datepicker" >
+      </div>
+
+      <div class="input-field col s4">
+          <select>
+            <option value="1" >Ultimos 7 dias</option>
+            <option value="1">Ultimos 30 dias</option>
+            <option value="1">Ultimos 12 meses  </option>
+            <option value="1">Desde sempre</option>
+          </select>
+          <label>Linha de tempo</label>
+        </div>
+    </form>
+  </div>
+
+</div>
+
+    <!-- tab estatista -->
+    <div class="row">
+        <div class=" ">
+          <ul class="tabs">
+            <li class="tab col s1"><a href="#yo-reproducao">Reproducoes</a></li>
+            <li class="tab col s1"><a class="active" href="#yo-curtida">Yo's</a></li>
+            <li class="tab col s1 "><a href="#yo-republicado">Republicoes</a></li>
+            <li class="tab col s1"><a href="#yo-comentario">Comentarios</a></li>
+            <li class="tab col s1"><a href="#yo-partilha">Partilhas</a></li>
+            <li class="tab col s1"><a href="#yo-download">Downloads</a></li>
+
+          </ul>
+        </div>
+
+        <!-- tab 1 -->
+        <div id="yo-reproducao" class="col s12">Test 1</div>
+
+        <!-- tab 2 -->
+        <div id="yo-curtida" class="col s12">Test 2</div>
+        <!-- tab 3 -->
+        <div id="yo-republicao" class="col s12">Test 3</div>
+        <!-- tab 4 -->
+        <div id="yo-partilha" class="col s12">Test 5</div>
+        <!-- tab 5 -->
+        <div id="yo-comentario" class="col s12">Test 4</div>
+        <!-- tab  -->
+        <div id="yo-download" class="col s12">Test 6</div>
+
+      </div>
+
+
+
+</div>
+
+<!-- fim tab 3 -->
+
+
+
+
+
+         <!-- usuario anonimo  -->
+       <div class="col m12 yo-hide">
+         <!-- musica  info-->
+         <div class="row">
+           <div class="col m12  center"><span class="yo-font-light yo-index-tendencia-texto" style="font-size: x-large">
+             <h1 class="yo-carregamento-box-titulo">
+             Produzes musica ? Crias algum som ?
+             Mostre ao mundo</h1>
+           </span>
+           <a class="btn red darken-2  ">Crie uma conta primeiro</a>
+
+           <div class="divider"></div>
+         </div>
+
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="ico/music.jpg">
+                  <span class="card-title text-darken-4 red-text">Divulgue</span>
+                </div>
+                <div class="card-content">
+                  <p>Carregue tuas musicas e ou sons, crie album e aproveite o espaco gratis
+                    disponivel.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">Meus direitos</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- partilha info  -->
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="ico/partilhe.jpg">
+                  <span class="card-title text-darken-4 red-text">Partilhe</span>
+                </div>
+                <div class="card-content">
+                  <p>Partilhe teus sons no
+                    facebook, twitter, soundcloud, spotify, itunes e em toda web.
+                    </p>
+                </div>
+                <div class="card-action">
+                  <a href="#">como partilhar</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- fans info -->
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="ico/fans2.jpg">
+                  <span class="card-title text-darken-1 red-text">Mais proximo dos fans</span>
+                </div>
+                <div class="card-content">
+                  <p>Controle o progresso da tua carreira com informacoes
+                    estatisticas disponiveis e iteraja com  teus fans e seguidores
+                    via comentarios e mensagem.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">fans info</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+       </div>
+
+       <!-- usuario anonimo  -->
+       <div class="yo-carregar-btn-signup col s12 center yo-hide">
+         <div class="divider"></div>
+         <span class="yo-btn-login yo-opacity-transition yo-btn-transparente ">entrar</span>
+         <span class="btn red darken-2"> criar conta</span>
+       </div>
+
+
+<!--
+     <p><strong>Importante: </strong>Ao carregar, voce confirmar que as faixas respeitam os
+     nossos <a href="#"> Termos de Uso</a> e nao violam direitos de outras pessoas. Em caso
+   de duvida, visite as nossas paginas de <a href="#">Informacoes sobre direitos autorais</a> e as
+ de perguntas frequentes antes de enviar-nos.</p>
+ <p>Problemas ao enviar? Entre em <a href="#">Dicas de resolucao de problemas</a>.</p>
+ <p>Que tipos de arquivos da para enviar ? Oferecemos suporte a arquivos para audio AIFF, WAVE (WAV), FLAC,
+ ALAC, OGG, MP2, MP3, M4A,  AAC, AMR e WMA. Para Video MP4, FLV, MKV, 3GP.</p>
+ <div class="divider"></div>
+
+  <div class="yo-carregamento-rodape">
+    <ul>
+      <li><a href="#">aviso legal -</a></li>
+      <li><a href="#">cookies -</a></li>
+      <li><a href="#">yotlanga Ltd -</a></li>
+      <li><a href="#">Pesquisas populares</a></li>
+    </ul>
+    <p><a href="#">Idioma:</a>Portugues(portugal)</p>
+  </div> -->
+     </div>
+     </div>
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/forms.js"></script>
+     <script type="text/javascript" src="js/picker.js"></script>
+     <script type="text/javascript" src="js/picker.date.js"></script>
+
+     <script type="text/javascript">
+       $(document).ready(function() {
+        //  $('.datepicker').pickatime({
+        //      default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+        //      fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+        //      twelvehour: false, // Use AM/PM or 24-hour format
+        //      donetext: 'OK', // text for done-button
+        //      cleartext: 'Clear', // text for clear-button
+        //      canceltext: 'Cancel', // Text for cancel-button
+        //      autoclose: false, // automatic close timepicker
+        //      ampmclickable: true, // make AM PM clickable
+        //      aftershow: function(){} //Function for after opening timepicker
+        //    });
+
+        $('.datepicker').pickadate();
+       });
+
+      $('select').material_select();
+
+     </script>
+
+   </body>
+ </html>

@@ -9,12 +9,94 @@
 
 body {
     /*max-width: 2000px;*/
+    font: 12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    margin: 0;
+    padding: 0;
     margin-left: auto;
     margin-right: auto;
+
     width: 100%;
-    background: #f5f5f5 none repeat scroll 0% 0%;
+    background: #f2f2f2  none repeat scroll 0% 0%;
+    color: #333;
     /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
 
+}
+
+.yo-audio-list-container {
+  background-color: #fff;
+}
+.yo-badge-username {
+    color: #999;
+    font-weight: 400;
+    padding: 0 65px 4px 0;
+}
+
+
+.yo-txt-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: normal;
+}
+
+.yo-badge-title  {
+  padding: 0 0 20px;
+  color: #333;
+}
+.yo-badge-estatistica {
+  overflow: hidden;
+  font-size: 12px;
+  color: #999;
+}
+
+.yo-badge-audio-duration {
+  font-size: 12px;
+  color: #999;
+}
+
+.yo-badge-link {
+  display: block;
+  overflow: hidden;
+  padding: 15px 10px;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.yo-btn-login {
+  margin-right: 6px;
+  height: 36px;
+  padding: 0.3rem 2rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 36px;
+  white-space: nowrap;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1rem;
+  /*vertical-align: baseline;*/
+  box-sizing: border-box;
+
+}
+
+
+
+.yo-opacity-transition {
+  transition: opacity .2s linear;
+}
+
+.yo-btn-transparente {
+  background: 0 0;
+  color: #fff;
+  border-color: #ccc;
+  border: 1px solid;
+}
+
+.inline {
+  display: inline;
 }
 
   POSICIONAR BEM OS ELEMENTOS DEVIDO A BARRA LATERAL
@@ -43,6 +125,8 @@ body {
 }
 
 
+
+/*dispositovos grandes */
 @media(min-width: 902px) {
   /*painel de usuario */
   #yo-procurar-interface{
@@ -64,9 +148,75 @@ body {
     padding-top: 15px;
   }*/
 
+  .yo-audio-item-media-artwork img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .yo-font-14 {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 100;
+  }
+
+
+  /*index -- tendencia*/
+  .yo-index-painel{
+    background: url("../images/yoJumb.png")  ;
+    height: 450px;
+    background-position: 0 791px  ;
+  }
+
+  .yo-btn {
+    padding: 6px 8px;
+
+  }
+
+  .yo-index-tendencia-texto {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+.yo-item-audio-action {
+  margin: 20px 10px;
+
 }
 
 
+.row {
+  margin-top: 10px;
+}
+
+.yo-carregamento-box {
+  border: 1px solid #f2f2f2;
+  min-height: 500px;
+  /*width: 600px;*/
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 0 2px 12px -5px rgba(0,0,0,.1);
+  background-color: #fff;
+  /*, 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);*/
+}
+
+
+
+.yo-carregamento-box-titulo {
+  padding: 36px 0 0;
+  font-size: 24px;
+  line-height: 1;
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+}
+}  /*fim dispositivos pesquenos e medios*/
+
+ /*mover depois*/
+ .yo-icon {
+   width: 100%;
+ }
 /*tags */
 
 .yo-tags {
@@ -292,7 +442,57 @@ body {
     margin-right: 5px;
   }
 
-}
+
+
+  /*  index  -- tendencia */
+  .yo-index-painel{
+    background-color: #5d5d5d;
+    height: 200px;
+  }
+
+
+  .yo-index-painel img {
+    /*margin-top: -40px;*/
+      width: 100%;
+      height: 100%;
+  }
+
+  .yo-audio-item-media-artwork img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .yo-font-14 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+
+  .yo-hide-on-desktop {
+    display: block;
+  }
+
+
+  .yo-index-tendencia-texto {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  .yo-item-audio-recomendado .row {
+    margin: 0;
+  }
+
+  /*section carregar */
+  .yo-carregamento-box-titulo {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+} /*fim dispositivo pequenos e medios */
+
 
 /* dispositivos medios */
 @media(min-width: 601px) {
@@ -356,4 +556,137 @@ body {
 }
 
 .yo-btn-alterar-painel {
+}
+
+
+
+/*  index */
+/*.yo-index-painel{
+  background-color: #5d5d5d;
+  /*background-image: url("../images/view640.png");*/
+  height: 300px;
+  /*background-position: 0 20px  ;*/
+
+
+.yo-audio-list-container {
+  height: 96px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+p.yo-badge-title {
+    margin-top: 0;
+    margin-bottom: -11px;
+}
+
+.yo-audio-item-media-artwork  {
+}
+
+
+.yo-audio-item-info i {
+  font-size: 15px;
+}
+
+
+.yo-audio-item {
+
+  margin-bottom: 35px;
+}
+
+.yo-container {
+  background-color: #fff;
+}
+
+
+.yo-btn-index-carregar {
+  margin-top: 1rem;
+  height: 46px;
+}
+
+.yo-btn-index-carregar button{
+  height: 46px;
+  border-radius: 10px;
+}
+
+.yo-font-light {
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+
+
+
+
+.yo-painel {
+  color: #fff;
+  overflow: hidden;
+  border-top: 4px solid #f50;
+  background-color: #666;
+  height: 450px;
+  background: url(images/yoJumb.png) 0 0/conver no repeat;
+}
+
+
+#yo-procura {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 3px;
+}
+.input-field button {
+  border-radius: 10px;
+  margin-top: 3px;
+}
+
+
+ /*section carregar*/
+
+
+.yo-carregamento-box .yo-btn-transparente {
+  border: 1px solid #981b1b;
+  color: #981b1b;
+  text-transform: uppercase;
+
+}
+.yo-carregar-btn-signup {
+  padding: 10px;
+}
+
+
+.yo-hide {
+  display: none;
+}
+
+.yo-carregamento-rodape li {
+  display: inline;
+
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+
+.yo-registrar {
+  background: url("../ico/background.jpg") cover;
+}
+
+#yo-id-carregar-Minha-faixa {
+  height: 500px;
+}
+
+
+.yo-carregar-track-info-empty {
+    margin-top: 10%;
+}
+
+.yo-carregamento-box .tab {
+  text-transform: capitalize;
+}
+
+.yo-carregamento-box .tab a {
+  font-size: 13px;
+  font-weight: 100px;
+  color: #333;
+  padding: 0;
 }
