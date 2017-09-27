@@ -5,9 +5,9 @@
      <link href="css/icon.css" rel="stylesheet">
      <!--Import materialize.css-->
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-     <link type="text/css" rel="stylesheet" href="css/estilo.css"  media="screen,projection"/>
      <link type="text/css" rel="stylesheet" href="css/classic.css"  media="screen,projection"/>
      <link type="text/css" rel="stylesheet" href="css/classic.date.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/estilo.css"  media="screen,projection"/>
      <!-- <link type="text/css" rel="stylesheet" href="css/default.css"  media="screen,projection"/> -->
 
      <!--Let browser know website is optimized for mobile-->
@@ -35,25 +35,24 @@
 
          <!-- usuario registado  -->
          <div class="row">
-  <div class="col s12">
+  <div class="">
     <ul class="tabs">
-      <li class="tab col s1"><a class=""href="#test1">Upload</a></li>
+      <li class="tab col s1"><a class=""href="#yo-tab-upload">Upload</a></li>
       <li class="tab col s2"><a  href="#yo-id-carregar-Minha-faixa">Minhas faixas</a></li>
-      <li class="tab col s2 "><a class="active"href="#test3">Estatistica</a></li>
-      <li class="tab col s2"><a href="#test4">Planos Pro</a></li>
+      <li class="tab col s2 "><a class=""href="#yo-tab-estatistica">Estatistica</a></li>
+      <li class="tab col s2"><a  class="active" href="#yo-tab-planos-pro">Planos Pro</a></li>
     </ul>
   </div>
   <!-- <div id="test1" class="col s12">Test 1</div> -->
 
-  <div id="test4" class="col s12">Test 4</div>
 </div>
 
 <!-- tab 1 -->
-<div id="test1">
+<div id="yo-tab-upload">
 
-         <div class="col s12 m12">
+         <div class="col s12 ">
            <div class="row">
-             <div class="col s12 m12  center"><span class="yo-font-light yo-index-tendencia-texto" style="font-size: x-large">
+             <div class="col s12   center"><span class="yo-font-light yo-index-tendencia-texto" style="font-size: x-large">
                <h1 class="yo-carregamento-box-titulo">
                Carregue teu som para a yotlanga</h1>
              </span>
@@ -71,7 +70,7 @@
              <i class="material-icons">keyboard_voice</i>
            </span>
            <div class="row">
-           <div class="col s12 push-m2">
+           <div class="col s12 m10 push-m2">
            <p class="">
            <input type="checkbox" name="yo-playlist" id="yo-playlist" checked="checked">
            <label for="yo-playlist">Criar playlist se forem varios arquivos</label>
@@ -82,6 +81,7 @@
        </div>
 
 
+       <div class="yo-carregar-info">
             <p><strong>Importante: </strong>Ao carregar, voce confirmar que as faixas respeitam os
             nossos <a href="#"> Termos de Uso</a> e nao violam direitos de outras pessoas. Em caso
           de duvida, visite as nossas paginas de <a href="#">Informacoes sobre direitos autorais</a> e as
@@ -100,11 +100,12 @@
            </ul>
            <p><a href="#">Idioma:</a>Portugues(portugal)</p>
          </div>
+       </div>
 
 </div> <!-- fim tab 1 -->
 
 
-<!-- tab 2  -->
+<!-- tab faixa  -->
 <div id="yo-id-carregar-Minha-faixa" class="col s12">
 
 <div class="row">
@@ -114,7 +115,7 @@
        <input type="checkbox" id="yo-carregar-editar-check" />
        <label for="yo-carregar-editar-check"></label>
      </div>
-     <div class="col s4">
+     <div class="col s12 m4">
        <select class="browser-default" >
          <option value=""  selected>Editar faixa</option>
          <option value="1">Option 1</option>
@@ -122,7 +123,7 @@
          <option value="3">Option 3</option>
        </select>
      </div>
-  <div class="col s4">
+  <div class="col s12 m4">
     <button class="btn red darken-2"type="button" name="button">Adicionar a playlist</button>
   </div>
 
@@ -140,27 +141,27 @@
 
 <!-- fim tab 2 -->
 
-<!-- tab 3 -->
+<!-- tab 3  estatistica-->
+<div id="yo-tab-estatistica" class="col s12">
 
-<div id="test3" class="col s12">
 <div class="row">
-  <div class="yo-carregar-estatistica-titulo col s6 ">
-  <span class="yo-font-light yo-index-tendencia-texto">Estatistica </span>
-  <p class="yo-font-light yo-font-14">Ops sem actividade em sua conta</p>
+  <div class="yo-carregar-estatistica-titulo col s12 m6">
+  <span class="yo-font-light yo-texto-titulo">Estatistica </span>
+  <p class="yo-basic-font yo-font-16">Ops sem actividade em sua conta</p>
 </div>
-  <div class="yo-carregar-estatistica-timeline col s6 ">
+  <div class="yo-carregar-estatistica-timeline col s12 m6 ">
     <form class="  " action="index.html" method="post">
 
-      <div class="col s4">
+      <div class="col s12 m4">
         De: <input type="text" class="datepicker" >
       </div>
-      <div class="col s4">
+      <div class="col s12 m4">
         Ate: <input type="text" class="datepicker" >
       </div>
 
-      <div class="input-field col s4">
+      <div class="input-field col s12 m4">
           <select>
-            <option value="1" >Ultimos 7 dias</option>
+            <option value="1">Ultimos 7 dias</option>
             <option value="1">Ultimos 30 dias</option>
             <option value="1">Ultimos 12 meses  </option>
             <option value="1">Desde sempre</option>
@@ -173,42 +174,247 @@
 </div>
 
     <!-- tab estatista -->
+    <div class="yo-tab-estatistica">
     <div class="row">
-        <div class=" ">
           <ul class="tabs">
             <li class="tab col s1"><a href="#yo-reproducao">Reproducoes</a></li>
             <li class="tab col s1"><a class="active" href="#yo-curtida">Yo's</a></li>
-            <li class="tab col s1 "><a href="#yo-republicado">Republicoes</a></li>
+            <li class="tab col s1 "><a href="#yo-republicado">Republicacoes</a></li>
             <li class="tab col s1"><a href="#yo-comentario">Comentarios</a></li>
             <li class="tab col s1"><a href="#yo-partilha">Partilhas</a></li>
             <li class="tab col s1"><a href="#yo-download">Downloads</a></li>
 
           </ul>
-        </div>
 
         <!-- tab 1 -->
-        <div id="yo-reproducao" class="col s12">Test 1</div>
+        <div id="yo-reproducao" class="col s12">
+
+          <div class="yo-carregar-track-info-empty center">
+            <img src="ico/sad_sound.jpg" alt=""><br>
+            <span class="yo-font-light yo-index-tendencia-texto">Voce nao publicou nenhuma faixa ainda!</span><br>
+            <span class="yo-basic-font-info">Carregue a sua primeira faixa e faca parte desta comunidade mista de criadores
+              que usam a Yotlanga para  estar mais proximo dos fans e seguidores, colaborar com outros artistas e
+               desenvolver as proximas ondas da musica.
+            </span><br><br>
+
+            <a href="#" class="yo-basic-font-info">Carregue a sua primeira musica</a>
+          </div>
+
+        </div>
 
         <!-- tab 2 -->
-        <div id="yo-curtida" class="col s12">Test 2</div>
+        <div id="yo-curtida" class="col s12">
+
+          <div class="yo-carregar-track-info-empty center">
+            <img src="ico/sad_sound.jpg" alt=""><br>
+            <span class="yo-font-light yo-index-tendencia-texto">Voce nao publicou nenhuma faixa ainda!</span><br>
+            <span class="yo-basic-font-info">Carregue a sua primeira faixa e faca parte desta comunidade mista de criadores
+              que usam a Yotlanga para  estar mais proximo dos fans e seguidores, colaborar com outros artistas e
+               desenvolver as proximas ondas da musica.
+            </span><br><br>
+
+            <a href="#" class="yo-basic-font-info">Carregue a sua primeira musica</a>
+          </div>
+
+        </div>
         <!-- tab 3 -->
-        <div id="yo-republicao" class="col s12">Test 3</div>
+        <div id="yo-republicado" class="col s12">
+
+          <div class="yo-carregar-track-info-empty center">
+            <img src="ico/sad_sound.jpg" alt=""><br>
+            <span class="yo-font-light yo-index-tendencia-texto">Voce nao publicou nenhuma faixa ainda!</span><br>
+            <span class="yo-basic-font-info">Carregue a sua primeira faixa e faca parte desta comunidade mista de criadores
+              que usam a Yotlanga para  estar mais proximo dos fans e seguidores, colaborar com outros artistas e
+               desenvolver as proximas ondas da musica.
+            </span><br><br>
+
+            <a href="#" class="yo-basic-font-info">Carregue a sua primeira musica</a>
+          </div>
+
+
+        </div>
         <!-- tab 4 -->
-        <div id="yo-partilha" class="col s12">Test 5</div>
+        <div id="yo-partilha" class="col s12">
+          <div class="yo-carregar-track-info-empty center">
+            <img src="ico/sad_sound.jpg" alt=""><br>
+            <span class="yo-font-light yo-index-tendencia-texto">Voce nao publicou nenhuma faixa ainda!</span><br>
+            <span class="yo-basic-font-info">Carregue a sua primeira faixa e faca parte desta comunidade mista de criadores
+              que usam a Yotlanga para  estar mais proximo dos fans e seguidores, colaborar com outros artistas e
+               desenvolver as proximas ondas da musica.
+            </span><br><br>
+
+            <a href="#" class="yo-basic-font-info">Carregue a sua primeira musica</a>
+          </div>
+
+        </div>
         <!-- tab 5 -->
-        <div id="yo-comentario" class="col s12">Test 4</div>
+        <div id="yo-comentario" class="col s12">
+          <div class="yo-carregar-track-info-empty center">
+            <img src="ico/sad_sound.jpg" alt=""><br>
+            <span class="yo-font-light yo-index-tendencia-texto">Voce nao publicou nenhuma faixa ainda!</span><br>
+            <span class="yo-basic-font-info">Carregue a sua primeira faixa e faca parte desta comunidade mista de criadores
+              que usam a Yotlanga para  estar mais proximo dos fans e seguidores, colaborar com outros artistas e
+               desenvolver as proximas ondas da musica.
+            </span><br><br>
+
+            <a href="#" class="yo-basic-font-info">Carregue a sua primeira musica</a>
+          </div>
+
+        </div>
         <!-- tab  -->
-        <div id="yo-download" class="col s12">Test 6</div>
+        <div id="yo-download" class="col s12">
+          <div class="yo-carregar-track-info-empty center">
+            <img src="ico/sad_sound.jpg" alt=""><br>
+            <span class="yo-font-light yo-index-tendencia-texto">Voce nao publicou nenhuma faixa ainda!</span><br>
+            <span class="yo-basic-font-info">Carregue a sua primeira faixa e faca parte desta comunidade mista de criadores
+              que usam a Yotlanga para  estar mais proximo dos fans e seguidores, colaborar com outros artistas e
+               desenvolver as proximas ondas da musica.
+            </span><br><br>
+
+            <a href="#" class="yo-basic-font-info">Carregue a sua primeira musica</a>
+          </div>
+
+        </div>
 
       </div>
 
+    </div>
+
+      <!-- estatistica info  -->
+      <div class="yo-estatistica-info">
+      <!-- row faixa info -->
+      <div class="row">
+        <div class="yo-carregar-estatistica-item-info">
+          <div class="col s8">
+            <h1 class="yo-font-light yo-texto-titulo">Faixas</h1>
+
+            <p class="yo-basic-font-info">
+              Assim que a sua musica for carregado  a Yotlanga, comecamos a manter a estatistica sobre todas as suas musicas e videos,
+              reproducao de faixas, downloads e ate mesmo  o nivel de envolvimento de cada faixa. Aqui voce  vai descobrir  o que seus
+              fans e seguidores gostam e o que querem ouvir mais.
+
+            </p>
+          </div>
+          <div class="yo-carregar-estatistica-card-img col s4">
+            <img src="ico/levels1.svg" alt="">
+          </div>
 
 
-</div>
 
-<!-- fim tab 3 -->
+        </div>
+      </div>
+
+      <!-- public e local -->
+      <div class="row">
+        <div class="yo-carregar-estatistica-item-info">
+          <div class="col s8">
+            <h1 class="yo-font-light yo-texto-titulo">Publico  e local</h1>
+
+            <p class="yo-basic-font-info">
+              Gracas as estatistica abrangentes da yotlanga, encontrar e estar mais proximos dos seus fans eh mais facil do que
+              nunca. Descubra quem sao os seus melhores ouvintes, bem como os Paises,  provincias, cidades que simplesmente nao conseguem
+              para de  escutar e ver as suas faixas e videos.
+
+            </p>
+          </div>
+          <div class="yo-carregar-estatistica-card-img col s4">
+            <img src="ico/public1.png" alt="" width="100%" height="100%">
+          </div>
 
 
+
+        </div>
+      </div>     <!-- fim publico e local -->
+
+      <!-- onde na yotlanga  -->
+      <div class="row">
+        <div class="yo-carregar-estatistica-item-info">
+          <div class="col s8">
+            <h1 class="yo-font-light yo-texto-titulo">Onde na yotlanga</h1>
+
+            <p class="yo-basic-font-info">
+              Com aplicativos no Desktop e dispositivos moveis em todo mundo (Sem mencionar a pagina principal e player incorporado),
+               a Yotlanga monitora todas actividades do teu trabalho pelo mundo. Use-os para ver de quais plataformas estao
+               vindo seus fans e seguidores.
+
+            </p>
+          </div>
+
+          <div class="yo-carregar-estatistica-card-img col s4">
+            <img src="ico/app1.png" alt="" width="100%" height="100%">
+          </div>
+
+
+
+        </div>
+      </div> <!-- fim onde na yotlanga -->
+
+      <!-- websites e rss -->
+      <div class="row">
+        <div class="yo-carregar-estatistica-item-info">
+          <div class="col s8">
+            <h1 class="yo-font-light yo-texto-titulo">Websites, RSS, aplicativos de terceiros</h1>
+
+            <p class="yo-basic-font-info">
+            Quando as musicas ou videos sao lancados, vamos ajuda-lo a rastrear onde elas estao. Vamos
+            revelar quais sites estao criando links para as musicas e videos ou incorporando-as, e quais  aplicativos de
+            RSS ou de terceiros que seus fans e seguidores estao usando para fazer streaming do seu ultimo som.
+            </p>
+          </div>
+          <div class="yo-carregar-estatistica-card-img col s4">
+            <img src="ico/website.png" alt="" width="100%" height="100%">
+          </div>
+
+
+
+        </div>
+      </div> <!-- fim websites e rss -->
+    </div>
+
+  </div>
+
+<!-- fim tab 3 estatistica -->
+
+  <!-- tab planos pro -->
+  <div id="yo-tab-planos-pro" class="col s12">
+    <div class="yo-tab-planospro-container">
+    <h3 class="yo-font-light  center">Brevemente</h3>
+
+    <div class="row">
+      <div class="col s12 m5">
+        <h4 class="yo-basic-font">Assine plano pro</h4>
+    <p>
+      Yotlanga eh uma plataforma para hospedagem e transimissao de conteudo multimidia,
+      nosso objectivo primario eh hospedar maior numero de artista e musicas ou videos possiveis.
+      Com intuito de criar uma industria musical  para comercializacao das musicas e criacao de licencas
+      para controlo de direitos autorais.
+    </p>
+  </div>
+
+  <div class="col s12 m4">
+    <div class="card">
+      <div class="card-image">
+        <img src="ico/music.jpg">
+        <span class="card-title text-darken-4 red-text">Divulgue</span>
+      </div>
+      <div class="card-content">
+        <ul>
+          <li><i class="materialize-icons">icon</i> Comercialize tuas musicas</li>
+          <li><i class="materialize-icons">icon</i> Obtenha licenca</li>
+          <li><i class="materialize-icons">icon</i> Veja onde teus fans estao</li>
+          <li><i class="materialize-icons">icon</i> Upload sem limite</li>
+
+        </ul>
+      </div>
+      <div class="card-action">
+        <a href="#">Plano pro</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- fim tab planos pro -->
 
 
 
