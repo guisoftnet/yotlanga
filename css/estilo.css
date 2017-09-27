@@ -1,3 +1,4 @@
+@import url("nouislider.css");
 ################################ GLOBAL #####################################
 
 * {
@@ -9,7 +10,7 @@
 
 body {
     /*max-width: 2000px;*/
-    font: 12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+    font: 12px/1.4 Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -157,7 +158,12 @@ a {
   .yo-font-14 {
     font-size: 14px;
     line-height: 14px;
-    font-weight: 100;
+    /*font-weight: 100;*/
+  }
+  .yo-font-12 {
+    font-size: 12px;
+    line-height: 12px;
+    /*font-weight: 100;*/
   }
 
 
@@ -190,16 +196,19 @@ a {
   margin-top: 10px;
 }
 
+
+/*section carregar */
+
 .yo-carregamento-box {
   border: 1px solid #f2f2f2;
   min-height: 500px;
   /*width: 600px;*/
-  margin-left: 50px;
-  margin-right: 50px;
+  /*margin-left: 50px;*/
+  /*margin-right: 50px;*/
   padding-left: 25px;
   padding-right: 25px;
   box-shadow: 0 2px 12px -5px rgba(0,0,0,.1);
-  background-color: #fff;
+    /*background-color: #fff;*/
   /*, 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);*/
 }
 
@@ -211,7 +220,44 @@ a {
   line-height: 1;
   font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
 }
-}  /*fim dispositivos pesquenos e medios*/
+
+.yo-tab-planospro-container {
+  padding: 10px 50px;
+
+}
+
+.yo-tab-planospro-container {
+  padding: 20px 50px;
+
+}
+
+
+#yo-tab-estatistica > .row {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+
+.yo-estatistica-info  .row {
+  background-color: #fff;
+  height: 300px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+  /*padding-top: 10px;*/
+}
+
+
+
+/*section brevemente */
+
+.yo-center-element {
+  padding: 2% 25%;
+}
+
+
+
+}  /*fim dispositivos grandes */
 
  /*mover depois*/
  .yo-icon {
@@ -473,11 +519,11 @@ a {
   }
 
 
-  .yo-index-tendencia-texto {
+  /*.yo-index-tendencia-texto {
     font-size: 14px;
     text-align: center;
     padding-top: 0px;
-  }
+  }*/
 
   .yo-item-audio-recomendado .row {
     margin: 0;
@@ -491,13 +537,42 @@ a {
   .btn {
     font-size: 0.8rem;
   }
+
+  .yo-estatistica-info  .row {
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+    /*padding-top: 10px;*/
+  }
+
+
+ /*section brevemente */
+ .yo-center-element h1 {
+   font-size: 3rem;
+ }
+
+
 } /*fim dispositivo pequenos e medios */
 
 
+
+/*dispositivos pequenos*/
+@media (max-width: 600px) {
+  .yo-carregar-track-info-empty img {
+     width: 100%
+  }
+
+}
 /* dispositivos medios */
 @media(min-width: 601px) {
   .yo-hide-on-mobile {
    display: inherit;
+ }
+
+ .yo-estatistica-info  .row {
+   background-color: #fff;
+   height: 300px;
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+   /*padding-top: 10px;*/
  }
 
 }
@@ -677,16 +752,313 @@ strong {
 
 
 .yo-carregar-track-info-empty {
-    margin-top: 10%;
+    margin-top: 6%;
+    /*width: 600px;*/
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.yo-center-element {
+    margin-top: 5px;
+    /*width: 600px;*/
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+
 }
 
 .yo-carregamento-box .tab {
   text-transform: capitalize;
+
+
 }
 
 .yo-carregamento-box .tab a {
   font-size: 13px;
-  font-weight: 100px;
   color: #333;
   padding: 0;
+}
+
+
+.yo-texto-titulo {
+
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-size: 24px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  font-weight: 400;
+
+}
+
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-size: 20px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  font-weight: 400;
+
+}
+
+
+.yo-strong {
+
+}
+
+.yo-carregar-estatistica-item-info  p{
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+
+.yo-carregar-estatistica-card-img {
+  background-color: #c8c3c3;
+  height: 300px;
+}
+
+
+
+.yo-carregar-estatistica-card-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.yo-tab-estatistica {
+  background-color: #fff;
+}
+
+
+
+
+
+#yo-tab-faixa {
+
+}
+
+.yo-carregar-info {
+  font-size: 13px;
+  padding: 0 10px;
+}
+
+
+.yo-font-large {
+  font-size: 18px;
+}
+
+
+.yo-basic-font {
+  font-family: "Interstate";
+
+}
+
+.yo.basic-font-info {
+  font-family: serif;
+}
+
+.yo-carregar-track-info-empty .yo-basic-font {
+  font-size: 16px;
+}
+
+
+.yo-font-16 {
+  font-size: 16px;
+}
+
+
+
+
+.yo-tab-planospro-container p {
+  font-size: 20px;
+}
+
+
+#yo-tab-planos-pro {
+  background-color: #fff;
+}
+
+
+
+.yo-brevemente-container {
+    box-shadow: 0 2px 12px -5px rgba(0,0,0,.1);
+
+}
+
+.side-nav li > a  {
+  font-weight: 100;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.yo-painel-artwork {
+  height: 200px;
+}
+
+.yo-painel-artwork  img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*section painel */
+
+#yo-tab-visao-geral .card {
+  background-color: #1f2326;
+  color: #fff;
+}
+
+#yo-tab-visao-geral .card .card-content span{
+  color: gray;
+}
+
+#yo-tab-visao-geral .card .card-action a{
+  font-size: 12px;
+  text-transform: capitalize;
+  color: rgba(209, 209, 209, 0.9);
+}
+
+.yotlanga-interface-panel, .side-nav, .tabs {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+
+.side-nav {
+  top: 64px;
+}
+
+.side-nav .subheader {
+  color: gray;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.yo-card-background {
+    background-color: #333;
+
+}
+
+.yo-card-artwork {
+  height: 450px;
+}
+
+
+.yo-card-background img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-image {
+  max-height: 157px;
+}
+
+
+.yo-texto-gray {
+  color: gray;
+}
+
+.yo-navegacao {
+  margin-bottom: 30px;
+}
+
+
+div.yo-song-item {
+  margin: 5px;
+  border: 1px solid #302626;
+  float: left;
+  width: 100%;
+  height: 300px;
+}
+div.yo-song-item-artwork {
+  height: 180px;
+}
+div.yo-song-item:hover {
+  border: 1px solid #777;
+}
+
+
+div.yo-song-item img {
+  width: 100%;
+  height: 100%;
+}
+
+div.yo-song-item-descricao {
+  padding: 15px;
+}
+
+
+.yotlanga-interface-draft {
+    background-color: #1b1b1b;
+
+}
+
+.yo-h5 {
+  font-size: 1.64rem;
+  line-height: 40px;
+}
+
+.yo-tab-control-view-item a {
+  margin-left: 5px;
+}
+
+.yo-tab-control-view-item  {
+  margin-bottom: 5px;
+}
+
+.yo-navegacao hr {
+  margin: -1px;
+}
+
+
+
+
+/*yoplayer compact */
+
+
+div.yo-player-compact {
+  margin: 5px;
+  border: 1px solid #302626;
+  float: left;
+  width: 100%;
+  height: 400px;
+  padding: 15px;
+}
+div.yo-player-artwork {
+  height: 180px;
+}
+div.yo-player-compact:hover {
+  border: 1px solid #777;
+}
+
+
+div.yo-player-artwork img {
+  width: 100%;
+  height: 100%;
+}
+
+div.yo-player-controlo-container {
+  padding: 15px;
+}
+
+#yo-player-barra-progresso {
+  margin-bottom: 10px;
+}
+
+.yo-player-controlo .btn-large i {
+  font-size: 3.6rem;
+}
+
+.yo-player-controlo .fa {
+  margin: 4px;
+  font-size: 1.5rem;
+}
+
+.yo-player-controlo-opcao {
+  margin-top: 15px;
+}
+.yo-player-controlo-opcao .fa {
+  font-size: .9rem;
+
 }
